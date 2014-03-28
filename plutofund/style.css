@@ -1,0 +1,291 @@
+h1
+ {
+	color:#787878;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 28px;
+ }
+ 
+body
+{
+	margin:0;
+	padding:0;
+}
+
+h1  .sub
+ {
+	font-size: 12px;
+ }
+ 
+ /*Setting up the header for the top of the page*/
+.he
+ {
+ color:white;
+ width:100%;
+ background-color:#003366;
+ height:100px;
+ text-indent:40px;
+ padding: 25px;
+ font-size:28px;
+ display: table-cell;
+ vertical-align:bottom;
+ }
+ 
+ .signup
+ {
+	border: 1px solid white;
+	border-radius: 5px;
+ }
+ 
+ .he a
+ {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	display: inline;
+	text-decoration:none; 
+	color:white;
+	padding: 20px;
+}
+
+.subhead
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px;
+	text-indent: 45px;
+}
+
+/*Template for the tabbed interface*/
+.tabs 
+{
+	position: relative;   
+	min-height: 200px;
+	clear: both;
+	margin: 25px 0;
+	text-indent: 45px;
+}	
+
+.tab
+{
+	float: left;
+}
+
+/*Sets up the appearance of the tabbed pages*/
+.tab label
+{
+	background: white;
+	padding: 10 px;
+	border: none;
+	margin-left: -1px; 
+	position: relative;
+	left: 1px; 
+	text-indent: 45px;
+	color:#787878;
+}
+
+/*Appearance of the selected tab*/
+[type=radio]:checked ~ label 
+{
+	background: white;
+	border-bottom: 5px solid grey;
+	z-index: 2;
+	color:#003366;
+}
+
+.info 
+{
+	position: absolute;
+	top: 28px;
+	left: 0;
+	background: white;
+	right: 0;
+	bottom: 0;
+	margin:0;
+	padding: 0;
+	border-top: 2px solid #787878; 
+}
+
+.tab [type=radio] 
+{
+	display: none;   
+}
+
+[type=radio]:checked ~ label ~ .info
+{
+	z-index: 1;
+}
+
+/*Sets up the div class that allows for three side to side text boxes*/
+.funds
+{
+    display: table-row;
+	position: relative;
+    border-collapse: separate;
+	border-spacing: 50px;
+	margin: 0;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color:white;
+	height: 100%;
+	padding:0;
+}
+
+.subfunds
+
+{
+	text-align: left; 
+	margin:0; 
+	width:550px;
+	display: table-row;
+	
+}
+
+/*Appearance of the word boxes on the SmartFunds page*/
+.sf1
+{
+	display:table-cell;
+	border: 2px solid #787878;
+	padding:5px;
+	font-size:12px;
+	margin:0;
+}
+
+.sf2
+{
+	display:table-cell;
+	border: 2px solid #787878;
+	padding:5px;
+	font-size:12px;
+}
+
+.sf3
+{
+	display:table-cell;
+	border: 2px solid #787878;
+	padding:5px;
+	font-size:12px;
+}
+
+
+/*Div constructor that acts as a placeholder for an image*/
+.imagebox
+{
+	width: 180px;
+	display:table;
+	height: 120px;
+	border: 1px dotted #787878;
+	background-color:#DCDCDC;
+	text-align:center;
+	margin:auto;
+	font-size:20px;
+}
+
+/* Sets up the appearence of the side bar*/
+.sidebar
+{
+	display:table-cell;
+	border: none;
+	border-left: 3px solid #787878;
+	width: 150px;
+	height: 400px;	
+	margin:0;
+	padding:0;
+}
+
+.tabletop
+{
+	border: none;
+	/*text-decoration: underline;*/
+	text-indent:20px;
+}
+
+.chartbox
+{
+	border: none;
+	text-indent:50px;
+}
+
+/*h2 .box
+{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	border: 1px solid #787878;
+} Tried to get the box around the numbers working on the Fund Profile page but not working as of now*/
+
+/*Consturcter for the stacked div objects of the Fund Profile pages*/
+.outer
+
+{
+	height: 400px;
+	padding: 0;
+	float:left;
+}
+
+/*Sets up the appearances of the individual divs on the Fund Profile pages*/
+.inner
+{
+	display:table;
+	border:2px solid #003366;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #003366;
+	width: 150px;
+	height: 100px;
+	vertical-align:center;
+	text-align:center;
+}
+
+/*Appearance of the selected div*/
+.inhighlight
+{
+	display:table;
+	border:2px solid #003366;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+	background-color: #003366;
+	width: 150px;
+	height: 100px;
+	vertical-align:center;
+	text-align:center;
+}
+
+/*Sets up the appearance of the donation button*/
+.button
+{
+	display:table;
+	border:2px solid #787878;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: white;
+	background-color:#228B22;
+	width: 200px;
+	height: 50px;
+	vertical-align:center;
+	text-align:center;
+	border-radius: 5px;
+	margin:0 auto;
+}
+
+.fundreport
+{
+	display: table-cell;
+	position:relative;
+	float:left;
+	padding: 5px;
+	width:700px;
+}
+
+.frepinner
+
+{
+	border: 1px solid #787878;
+	background-color:white;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align:center;
+	margin:0 auto;
+	padding:10px;
+}
+
+.frsidebox
+{
+	border: 2px solid #003366;
+	width: 250px;
+	text-align:center;
+	background-color:#DCDCDC;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color: #003366;
+	margin:0 auto;
+}
